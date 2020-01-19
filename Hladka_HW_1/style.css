@@ -1,0 +1,17 @@
+.wrapper {
+  width: 100%;
+  overflow: auto;
+}
+
+#matrix {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+
+#matrix td {
+  border: 1px solid #ccc;
+  min-width: 30px;
+  height: 30px;
+  text-align: center;
+  vertical-align: center;
+}
