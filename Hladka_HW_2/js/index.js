@@ -22,6 +22,7 @@ let performanceScript = {
 function addLine(map, name, number, lines) {
   // const line = { number: number, line: lines };
   const line = [number + ") " + lines];
+  name += ":";
   if (map.has(name)) {
     map.get(name).push(line);
   } else {
