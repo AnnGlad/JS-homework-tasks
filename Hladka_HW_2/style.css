@@ -1,0 +1,13 @@
+#result {
+  max-width: 920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
