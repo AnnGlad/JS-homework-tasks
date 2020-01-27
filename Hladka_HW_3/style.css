@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-4 {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.stretch {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.select-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem 0;
+}
+
+.select-holder {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.select-holder select {
+  background-color: transparent;
+  border: 0;
+  padding: .5rem;
+}
+
+.item {
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+
+.item-name {
+  min-height: 54px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.item-name-link {
+  display: block;
+  color: #444;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.item-price-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 45px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.item-price__old {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.item-price,
+.item-price__new {
+  font-size: 1.5rem;
+}
+
+.item-price__new {
+  color: #d23a3a;
+}
+
+.item-reviews-text {
+  display: inline-block;
+  color: rgb(20, 125, 211);
+}
+
+.item-reviews-text::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  margin-right: .5rem;
+  display: inline-block;
+  vertical-align: middle;
+  background: url("img/comments-icon.png") no-repeat;
+}
+
+.item-name,
+.item-reviews-holder,
+.item-price-holder {
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+@media (max-width: 768px) {
+  .col-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
